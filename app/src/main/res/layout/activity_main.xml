@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChangeFrag.MainActivity"
-    android:background="@color/peach_orange">
+    tools:context=".changeFrag.MainActivity"
+    android:background="@color/peach_orange"
+    android:padding="10dp">
 
     <Button
         android:id="@+id/Btn_Frag1"
@@ -20,7 +21,6 @@
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp" />
 
-
     <Button
         android:id="@+id/Btn_Frag2"
         android:layout_width="wrap_content"
@@ -34,13 +34,24 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp" />
 
+    <ImageButton
+        android:id="@+id/Btn_Next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/peach_orange"
+        android:importantForAccessibility="no" />
+
     <androidx.fragment.app.FragmentContainerView
-        android:name="com.example.fragmentstudy.ChangeFrag.FirstFragment"
+        android:name="com.example.fragmentstudy.changeFrag.FirstFragment"
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/Btn_Frag1"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Btn_Next"
         android:layout_margin="10dp"/>
 
 

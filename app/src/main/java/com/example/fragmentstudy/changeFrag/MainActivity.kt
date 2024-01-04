@@ -1,8 +1,10 @@
-package com.example.fragmentstudy.ChangeFrag
+package com.example.fragmentstudy.changeFrag
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.fragmentstudy.R
+import com.example.fragmentstudy.changeActivity.SecondActivity
 import com.example.fragmentstudy.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +33,11 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().apply {
                 replace(R.id.fragment_container, secondFragment)
                 commit()
+            }
+        }
+        binding.BtnNext.setOnClickListener {
+            Intent(this, SecondActivity::class.java).also {
+                startActivity(it)
             }
         }
     }

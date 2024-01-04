@@ -1,4 +1,4 @@
-package com.example.fragmentstudy.ChangeFrag
+package com.example.fragmentstudy.changeFrag
 
 import androidx.fragment.app.Fragment
 import com.example.fragmentstudy.R
