@@ -3,4 +3,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="sing_up">SING UP</string>
+    <string name="username">Username</string>
+    <string name="hint">hint</string>
+    <string name="password">password</string>
+    <string name="register">REGISTER</string>
 </resources>
