@@ -7,4 +7,6 @@
     <string name="hint">hint</string>
     <string name="password">password</string>
     <string name="register">REGISTER</string>
+    <string name="welcome">WELCOME!</string>
+    <string name="login">LOGIN</string>
 </resources>
