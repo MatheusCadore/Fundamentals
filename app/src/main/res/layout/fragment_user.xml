@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".changeFrag.UserFrag">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userName_InpLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName_Et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="User name"
+            android:inputType="textPersonName"
+            android:textStyle="italic" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/birthDay_inpLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperText="Just the year."
+        app:helperTextEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName_InpLay">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/birthDay_Et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Birthday year"
+            android:inputType="datetime"
+            android:textStyle="italic" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userDescription_Inplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/birthDay_inpLay">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userDescription_Et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Tell me about yourself"
+            android:inputType="text"
+            android:textStyle="italic" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveUser_Btn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Save User"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userDescription_Inplay" />
+
+    <TextView
+        android:id="@+id/userName_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/userAge_Tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveUser_Btn" />
+
+    <TextView
+        android:id="@+id/userAge_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/userDescription_Tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName_Tv" />
+
+    <TextView
+        android:id="@+id/userDescription_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAge_Tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
